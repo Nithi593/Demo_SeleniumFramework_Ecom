@@ -59,5 +59,28 @@ public class ErrorValidationTest extends BaseTest {
 		
 	
 	}
+	
+	@Test
+	public void productErrorValidation1() throws IOException {
+		
+		
+		String productName = "ZARA COAT 3";		
+		//login
+		ProductCatalogue productCatalogue = landingPage.loginApplication("scottmcall40@gmail.com", "Scottmcall40");
+		
+		//get products
+		List<WebElement> products = productCatalogue.getProductsList();
+
+		//add to cart
+		productCatalogue.addProductToCart(productName);
+
+		//cart PAge
+		CartPage cartPage = productCatalogue.goToCartPage();
+		
+		Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");		
+		Assert.assertFalse(match);
+		
+	
+	}
 
 }

@@ -61,7 +61,7 @@ public class ErrorValidationTest extends BaseTest {
 	}
 	
 	@Test
-	public void productErrorValidation1() throws IOException {
+	public void productErrorValidation2() throws IOException {
 		
 		
 		String productName = "ZARA COAT 3";		

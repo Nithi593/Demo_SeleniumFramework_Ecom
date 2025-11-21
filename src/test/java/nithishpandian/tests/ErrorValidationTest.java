@@ -60,7 +60,7 @@ public class ErrorValidationTest extends BaseTest {
 	
 	}
 	
-	// Test 2 for n8n automation
+	// Test 3 for n8n automation
 	
 	@Test
 	public void productErrorValidation2() throws IOException {

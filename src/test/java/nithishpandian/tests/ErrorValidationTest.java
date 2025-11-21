@@ -60,7 +60,7 @@ public class ErrorValidationTest extends BaseTest {
 	
 	}
 	
-	// Test 9 for n8n automation
+	// Test 10 for n8n automation
 	
 	@Test
 	public void productErrorValidation2() throws IOException {
@@ -74,10 +74,10 @@ public class ErrorValidationTest extends BaseTest {
 		List<WebElement> products = productCatalogue.getProductsList();
 
 		//add to cart
-		productCatalogue.addProductToCart(productName);
+		productCatal.addProductToCart(productName);
 
 		//cart PAge
-		CartPage cartPage = productCatalogue.goToCartPage();
+		CartPage cartPage = productCatae.goToCartPage();
 		
 		Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");		
 		Assert.assertFalse(match);

@@ -37,6 +37,8 @@ public class ErrorValidationTest extends BaseTest {
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 	
+	// Test 101
+	
 	@Test
 	public void productErrorValidation() throws IOException {
 		
@@ -53,31 +55,6 @@ public class ErrorValidationTest extends BaseTest {
 
 		//cart PAge
 		CartPage cartPage = productCatalogue.goToCartPage();
-		
-		Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");		
-		Assert.assertFalse(match);
-		
-	
-	}
-	
-	// Test 17 for n8n automation
-	
-	@Test
-	public void productErrorValidation2() throws IOException {
-		
-		
-		String productName = "ZARA COAT 3";		
-		//login
-		ProductCatalogue productCatalogue = landingPage.loginApplication("scottmcall40@gmail.com", "Scottmcall40");
-		
-		//get products
-		List<WebElement> products = productCatalogue.getProductsList();
-
-		//add to cart
-		productCatalogue.addProductToCart(productName);
-
-		//cart PAge
-		CartPage cartPage = productCatalogue.goToCartPage()
 		
 		Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");		
 		Assert.assertFalse(match);

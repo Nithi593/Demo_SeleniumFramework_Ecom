@@ -28,7 +28,7 @@ public class StandaloneTest {
 		
 		LandingPage landingPage = new LandingPaGE(driver);
 		
-		//login
+		//login 1
 		driver.findElement(By.id("userEmail")).sendKeys("scottmcall41@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Scottmcall41");
 		driver.findElement(By.id("login")).click();

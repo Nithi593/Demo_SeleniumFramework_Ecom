@@ -39,10 +39,10 @@ public class ErrorValidationTest extends BaseTest {
 	
 	// Test 110
 	//Attach severity levels (INFO/WARN/CRITICAL)
-	//Notify Slack/Discord with review summary
+	//Notify Slack/Discord with review summary//
 	//Auto-fix and push a new branch
 	@Test
-	public void productErrorValidation() th IOException {
+	public void productErrorValidation() thr IOException {
 		
 		
 		String productName = "ZARA COAT 3";		

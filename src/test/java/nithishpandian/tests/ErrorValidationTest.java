@@ -37,7 +37,7 @@ public class ErrorValidationTest extends BaseTest {
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 	
-	// Test 103
+	// Test 104
 	
 	@Test
 	public void productErrorValidation() throws IOException {
@@ -45,7 +45,7 @@ public class ErrorValidationTest extends BaseTest {
 		
 		String productName = "ZARA COAT 3";		
 		//login
-		ProductCatalogue productCa = landingPage.loginApplication("scottmcall41@gmail.com", "Scottmcall41");
+		ProductCatalogue productCat = landingPage.loginApplication("scottmcall41@gmail.com", "Scottmcall41");
 		
 		//get products
 		List<WebElement> products = productCatalogue.getProductsList();

@@ -26,7 +26,7 @@ public class StandaloneTest {
 		driver.get("https://rahulshettyacademy.com/client/");
 		driver.manage().window().maximize();
 		
-		LandingPage landingPage = new LandingPage(driver);
+		LandingPage landingPage = new LandingPaGE(driver);
 		
 		//login
 		driver.findElement(By.id("userEmail")).sendKeys("scottmcall41@gmail.com");

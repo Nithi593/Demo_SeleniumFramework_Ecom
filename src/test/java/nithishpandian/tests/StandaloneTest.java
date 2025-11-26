@@ -40,14 +40,14 @@ public class StandaloneTest {
 		//products
 		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
 		
-		WebElement prod = products.stream().filter(product -> 
+		WebEle prod = products.stream().filter(product -> 
 		product.findElement(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst().orElse(null);
 		
 		//add to cart
-		prod.findElement(By.xpath("(//button[contains(text(),'Add To Cart')])[1]")).click();
+		prod.find(By.xpath("(//button[contains(text(),'Add To Cart')])[1]")).click();
 		
 		                                                                                                                                                                                                 
-		By cart = By.cssSelector("[routerlink*='cart']");
+		By cart = By.cssSeler("[routerlink*='cart']");
 
 		// ensure overlays are gone
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#toast-container")));

@@ -35,7 +35,7 @@ public class StandaloneTest {
 		
 		//Explicit wait
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));		
+		wait.until(ExpectedbilityOfElementLocated(By.cssSelector(".mb-3")));		
 		
 		//products
 		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));

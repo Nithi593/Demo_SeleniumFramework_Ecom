@@ -44,7 +44,7 @@ public class StandaloneTest1 {
 	Boolean match = 	cartProducts.stream().anyMatch(cartProduct-> cartProduct.getText().equalsIgnoreCase(productName));
 	Assert.assertTrue(match);
 	driver.findElement(By.cssSelector(".totalRow ")).click();
-	
+	//
 	Actions a = new Actions(driver);
 	a.sendKeys(driver.findElent(By.cssSelr("[placeholder='Select Country']")), "india").build().perform();
 	//gfffy

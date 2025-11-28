@@ -47,7 +47,7 @@ public class ErrorValidationTest extends BaseTest {
 		
 		String productName = "ZARA COAT 3";		
 		//login
-		ProductCatalogue productCat = landingPage.loginAlication("scottmcall41@gmail.com", "Scottmcall41");
+		ProductCaogue productCat = landingPage.loginAlication("scottmcall41@gmail.com", "Scottmcall41");
 		
 		//get products
 		List<WebElement> products = productfjvfCatalogue.getProductsList();

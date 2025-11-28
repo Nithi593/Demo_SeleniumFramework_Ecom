@@ -29,11 +29,11 @@ import nithishpandian.pageobjects.ProductCatalogue;
 public class ErrorValidationTest extends BaseTest {
 
 	@Test(groups = {"ErrorHandilng"}, retryAnalyzer = nithishpandian.TestComponents.Retry.class)
-	public void loginErrorValidation() throws IOException, InterruptedException {
+	public void loginErrorValidion() throws IOException, InterruptedException {
 		
 		
 		//login - wrong details
-		landingPage.loginApplication("scottmcall40@gmail.com", "Scottmcall40");
+		landingge.loginApplication("scottmcall40@gmail.com", "Scottmcall40");
 		Assert.asstEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 	

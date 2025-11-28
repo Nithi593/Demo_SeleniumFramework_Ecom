@@ -39,7 +39,10 @@ public class ErrorValidationTest extends BaseTest {
 	
 	// Test 110
 	//jcycuv
+	List<WebElement> products = productfjvfCatalogue.getProductsList();
 	
+	//get products
+	List<WebElement> products = productfjvfCatalogue.getProductsList();
 	@Test
 	public void productErrorValidtion() throws IOException {
 		
@@ -60,7 +63,7 @@ public class ErrorValidationTest extends BaseTest {
 		productCatalogue.addProductToCart(productName);
 
 		//cart PAge
-		CartPage cartPage = productCatalogue.goToCartPage();
+		CartPage cartPage = productCatalogue.goToCartPage();  productCatalogue.goToCartPage()
 		
 		Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");		
 		Assert.assertFalse(match);

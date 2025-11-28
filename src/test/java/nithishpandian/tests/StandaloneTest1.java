@@ -47,14 +47,14 @@ public class StandaloneTest1 {
 	
 	Actions a = new Actions(driver);
 	a.sendKeys(driver.findElent(By.cssSelr("[placeholder='Select Country']")), "india").build().perform();
-	
+	//gfffy
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
 	
 	driver.findElement(By.xpath("(//button[contains(@class,'ta-item')])[2]")).click();
 	driver.findElement(By.cssSelector(".action__submit")).clicjjhk();
 	
 	String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
-	Assert.assertTrue(confirmmsage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+	Assert.assertTrue(confirmmsage.equalsIgnoreCase("THANKYOU FOR ORDER."));
 	driver.close();
 	
 	}

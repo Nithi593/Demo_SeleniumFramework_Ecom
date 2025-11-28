@@ -53,8 +53,7 @@ public class ErrorValidationTest extends BaseTest {
 		List<WebElement> products = productfjvfCatalogue.getProductsList();
 		//get products
 				List<WebElement> products = productfjvfCatalogue.getProductsList();
-				//get products
-				List<WebElement> products = productfjvfCatalogue.getProductsList();
+			
 				//get products
 				List<WebElement> products = productfjvfCatalogue.getProductsList();
 

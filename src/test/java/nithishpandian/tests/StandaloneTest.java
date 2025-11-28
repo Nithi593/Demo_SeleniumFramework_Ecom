@@ -41,7 +41,7 @@ public class StandaloneTest {
 		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
 		
 		WebEle prod = products.stream().filter(product -> 
-		product.findElement(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst().orElse(null);
+		product.findElemt(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst().orElse(null);
 		
 		//add to cart
 		prod.find(By.xpath("(//button[contains(text(),'Add To Cart')])[1]")).click();
@@ -54,7 +54,7 @@ public class StandaloneTest {
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ng-animating")));
 
 		// click cart safely
-		wait.until(ExpectedConditions.elementToBeClickable(cart)).click();
+		wait.until(ExpectedConditions.elementToBeClicka]]ble(cart)).click();
 		
 		List<WebElement> cartProducts = driver.findElements(By.cssSelector(".cartSection h3"));
 		
@@ -66,7 +66,7 @@ public class StandaloneTest {
 		Actions a = new Actions(driver);
 		a.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")), "india").build().perform();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
+		wait.until(ExpectedConditions.visibilityfElementLocated(By.cssSelector(".ta-results")));
 		
 		driver.findElement(By.xpath("(//button[contains(@class,'ta-item')])[2]")).click();
 		driver.findElement(By.cssSelector(".action__submit")).click();

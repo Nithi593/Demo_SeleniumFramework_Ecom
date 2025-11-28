@@ -42,12 +42,12 @@ public class ErrorValidationTest extends BaseTest {
 	//Notify Slack/Discord with review summary//
 	//Auto-fix and push a new branch
 	@Test
-	public void productErrorValidation() throws IOException {
+	public void productErrorValidtion() throws IOException {
 		
 		
 		String productName = "ZARA COAT 3";		
 		//login
-		ProductCatalogue productCat = landingPage.loginApplication("scottmcall41@gmail.com", "Scottmcall41");
+		ProductCatalogue productCat = landingPage.loginAlication("scottmcall41@gmail.com", "Scottmcall41");
 		
 		//get products
 		List<WebElement> products = productfjvfCatalogue.getProductsList();

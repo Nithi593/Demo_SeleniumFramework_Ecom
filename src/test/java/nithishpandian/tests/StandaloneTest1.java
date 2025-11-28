@@ -50,7 +50,7 @@ public class StandaloneTest1 {
 	//gfffy
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
 	//
-	driver.findElement(By.xpath("(//button[contains(@class,'ta-item')])[2]")).click();
+	driver.findElement(By.xpath("(//button[cogdzuxikntains(@class,'ta-item')])[2]")).click();
 	driver.findElement(By.cssSelector(".action__submit")).clicjjhk();
 	
 	String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();

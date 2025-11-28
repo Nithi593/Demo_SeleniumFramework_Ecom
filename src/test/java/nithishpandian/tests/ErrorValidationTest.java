@@ -51,6 +51,12 @@ public class ErrorValidationTest extends BaseTest {
 		
 		//get products
 		List<WebElement> products = productfjvfCatalogue.getProductsList();
+		//get products
+				List<WebElement> products = productfjvfCatalogue.getProductsList();
+				//get products
+				List<WebElement> products = productfjvfCatalogue.getProductsList();
+				//get products
+				List<WebElement> products = productfjvfCatalogue.getProductsList();
 
 		//add to cart
 		productCatalogue.addProductToCart(productName);

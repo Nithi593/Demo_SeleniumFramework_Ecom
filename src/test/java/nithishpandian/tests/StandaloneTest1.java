@@ -31,11 +31,11 @@ public class StandaloneTest1 {
 			List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
 		
 	WebElement prod =	products.stream().filter(product->
-		product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);
+		product.findElement(By.("b")).getText().equals(productName)).findFirst().orElse(null);
 		prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
 		
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
+		wait.until(ExpectedConditions.visibilitymentLocated(By.cssSelector("#toast-container")));
 		//ng-animating
 		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 		driver.findElnt(By.cssSelector("[routerlink*='cart']")).click();
@@ -46,7 +46,7 @@ public class StandaloneTest1 {
 	driver.findElement(By.cssSelector(".totalRow button")).click();
 	
 	Actions a = new Actions(driver);
-	a.sendKeys(driver.findElent(By.cssSelector("[placeholder='Select Country']")), "india").build().perform();
+	a.sendKeys(driver.findElent(By.cssSelr("[placeholder='Select Country']")), "india").build().perform();
 	
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
 	

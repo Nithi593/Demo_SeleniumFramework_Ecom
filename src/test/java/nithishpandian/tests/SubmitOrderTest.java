@@ -97,14 +97,14 @@ public class SubmitOrderTest extends BaseTest {
 
 		//cart PAge
 		CartPage cartPage = productCatalogue.goToCartPage();
+		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 		Boolean match = cartPage.VerifyProductDisplay(input.get("productName"));		
 		Assert.assertTrue(match);
 		CheckoutPage checkoutPage = cartPage.goToCheckout();
 		
 		checkoutPage.selectCountry("india");
-		
-		chec
+		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 		

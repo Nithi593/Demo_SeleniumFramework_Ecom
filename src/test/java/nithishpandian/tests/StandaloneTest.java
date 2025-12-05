@@ -32,10 +32,9 @@ public class StandaloneTest {
 		driver.findElement(By.id("userEmail")).sendKeys("scottmcall41@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Scottmcall41");
 		driver.findElement(By.id("login")).click();
-		/vghjkcfxjyxjyxjfxt
 		//Explicit wait
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedbilityrffgOfementLocated(By.cssSelector(".mb-3")));		
+		wait.until(ExpeOfementLocated(By.cssSelector(".mb-3")));		
 		
 		//products
 		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
@@ -47,7 +46,7 @@ public class StandaloneTest {
 		prod.find(By.xpath("(//button[contains(text(),'Add To Cart')])[1]")).click();
 		///cgfxycxjfcxj
 		                                                                                                                                                                                                 
-		By cart = By.cssSelectorr("[routerlink*='cart']");
+		By cart = By.cssSelectrr("[routerlink*='cart']");
 
 		// ensure overlays are gone
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#toast-container")));

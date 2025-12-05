@@ -49,7 +49,7 @@ public class StandaloneTest {
 		                                                                                                                                                                                                 
 		By cart = By.crr("[routerlink*='cart']");
 
-		// ensure overlays are gone
+		// ensure overlays 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#toast-container")));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ng-animating")));
 

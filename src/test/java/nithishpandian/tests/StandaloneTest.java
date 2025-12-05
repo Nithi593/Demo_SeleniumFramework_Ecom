@@ -45,7 +45,7 @@ public class StandaloneTest {
 		
 		//add to cart
 		prod.find(By.xpath("(//button[contains(text(),'Add To Cart')])[1]")).click();
-		
+		///cgfxycxjfcxj
 		                                                                                                                                                                                                 
 		By cart = By.cssSelectorr("[routerlink*='cart']");
 

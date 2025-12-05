@@ -104,6 +104,10 @@ public class SubmitOrderTest extends BaseTest {
 		
 		checkoutPage.selectCountry("india");
 		
+		checkoutPage.selectCountry("india");
+		
+		checkoutPage.selectCountry("india");
+		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 		
 		String confirmMessage = confirmationPage.getConfirmationPage();

@@ -46,7 +46,7 @@ public class StandaloneTest {
 		prod.find(By.xpath("(//button[contains(text(),'Add To Cart')])[1]")).click();
 		///cgfxycxjfcxj
 		                                                                                                                                                                                                 
-		By cart = By.cssSelectrr("[routerlink*='cart']");
+		By cart = By.crr("[routerlink*='cart']");
 
 		// ensure overlays are gone
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#toast-container")));

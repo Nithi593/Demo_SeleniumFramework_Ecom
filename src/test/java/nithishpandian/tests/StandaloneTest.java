@@ -35,7 +35,6 @@ public class StandaloneTest {
 		//Explicit wait
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpeOfementLocated(By.cssSelector(".mb-3")));		
-		///digciaugaiufgaofgaoifgaofiahoiahfoafhaofvhaofvihaovhapvhafvoiahpvahfvoaihfaowhfvpoihhj
 
 
 		//products
@@ -46,7 +45,7 @@ public class StandaloneTest {
 		
 		//add to cart
 		prod.find(By.xpath("(//button[contains(text(),'Add To Cart')])[1]")).click();
-		///cgfxycxjfcxj
+		///
 		                                                                                                                                                                                                 
 		By cart = By.crr("[routerlink*='cart']");
 

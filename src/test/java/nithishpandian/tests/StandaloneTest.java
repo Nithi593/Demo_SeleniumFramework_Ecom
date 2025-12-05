@@ -37,9 +37,7 @@ public class StandaloneTest {
 		wait.until(ExpeOfementLocated(By.cssSelector(".mb-3")));		
 		///digciaugaiufgaofgaoifgaofiahoiahfoafhaofvhaofvihaovhapvhafvoiahpvahfvoaihfaowhfvpoihhj
 		///fanfafba
-		///pva
-		///iva
-		///vavnap;ivafvaIvafcav
+
 		//products
 		List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
 		

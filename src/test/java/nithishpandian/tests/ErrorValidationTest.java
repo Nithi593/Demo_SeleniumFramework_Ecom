@@ -73,17 +73,6 @@ public class ErrorValidationTest extends BaseTest {
 		
 		
 
-		String productName = "ZARA COAT 3";		
-		//login
-		ProductCaogue productCat = landingPage.loginAlication("scottmcall41@gmail.com", "Scottmcall41");
-		
-		//add to cart
-		productCatalogue.
-
-		//cart PAge
-		CartPage cartPage = productCatalogue.goToCartPage();  productCatalogue.goToCartPage()
-		
-		Boolean match = cartPage.VerifyProductDisplay("ZARA COAT 33");		
 		Assert.assertFalse(match);
 		
 	

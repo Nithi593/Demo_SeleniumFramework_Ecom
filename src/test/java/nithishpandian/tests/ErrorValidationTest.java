@@ -37,10 +37,7 @@ public class ErrorValidationTest extends BaseTest {
 		Assert.asstEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 	
-	// Test 110
-	//jcycuv
-	List<WebElement> products = productfjvfCatalogue.getProductsList();
-	
+
 	//get products
 	List<WebElement> products = productfjvfCatalogue.getProductsList();
 	@Test
@@ -51,16 +48,8 @@ public class ErrorValidationTest extends BaseTest {
 		//login
 		ProductCaogue productCat = landingPage.loginAlication("scottmcall41@gmail.com", "Scottmcall41");
 		
-		//get products
-		List<WebElement> products = productfjvfCatalogue.getProductsList();
-		//get products
-				List<WebElement> products = productfjvfCatalogue.getProductsList();
-			
-				//get products
-				List<WebElement> products = productfjvfCatalogue.getProductsList();
-
 		//add to cart
-		productCatalogue.addProductToCart(productName);
+		productCatalogue.
 
 		//cart PAge
 		CartPage cartPage = productCatalogue.goToCartPage();  productCatalogue.goToCartPage()
